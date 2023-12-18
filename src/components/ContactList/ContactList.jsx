@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export const ContactList = ({ contacts, onDeleteContact }) => {
+const ContactList = ({ contacts, onDeleteContact }) => {
     return (
   <ul>
     {contacts.map(({ id, name, number }) => (
@@ -17,3 +17,5 @@ ContactList.propTypes = {
   contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
   onDeleteContact: PropTypes.func.isRequired,
 };
+
+export default ContactList;
